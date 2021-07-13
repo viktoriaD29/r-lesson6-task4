@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Offline = (props) => {
   return (
     <div className="status">
       <span className="status__text">Offline</span>
-      <button className="status__btn" onClick={props.onOnline}>
+      <button className="status__btn" onClick={props.isOnline}>
         Recconect
       </button>
     </div>

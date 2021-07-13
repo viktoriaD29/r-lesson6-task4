@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import Status from './Status.jsx';
 
-const rootElemnt = document.querySelector('#root');
+const rootElement = document.querySelector('#root');
 
-ReactDOM.render(<Status />, rootElemnt);
+ReactDOM.render(<Status isOnline={true} />, rootElement);
