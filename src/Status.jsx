@@ -4,7 +4,7 @@ import Offline from './Offline.jsx';
 
 const Status = (props) => {
   const { isOnline } = props;
-  return isOnline ? <Online /> : <Offline onOnline={this.handleOnline} />;
+  return isOnline ? <Online /> : <Offline/>;
 };
 
 export default Status;
