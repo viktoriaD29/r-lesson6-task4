@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Online from './Online.jsx';
 import Offline from './Offline.jsx';
 
-class Status extends React.Component {
+class Status extends Component {
   constructor(props) {
     super(props);
 
@@ -10,21 +10,21 @@ class Status extends React.Component {
       isOnline: false,
     };
   }
-  
-  handelOnline = () => {
-    console.log(22);
+
+  handleOnline = () => {
+    console.log(22)
     this.setState = ({
       isOnline: true,
     });
   };
-  
+
   render() {
     return (
       <div>
         {this.state.isOnline ? (
           <Online />
         ) : (
-          <Offline isOnline={this.handelOnline} />
+          <Offline onOnline={this.handleOnline} />
         )}
       </div>
     );
@@ -32,3 +32,7 @@ class Status extends React.Component {
 }
 
 export default Status;
+
+// {
+//   this.state.isOnline ? <Online /> : <Offline />;
+// }
