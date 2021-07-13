@@ -13,9 +13,7 @@ class Status extends Component {
 
   handleOnline = () => {
     console.log(22)
-    this.setState = ({
-      isOnline: true,
-    });
+    this.setState((state) => ({ ...state, isOnline: true }));
   };
 
   render() {
