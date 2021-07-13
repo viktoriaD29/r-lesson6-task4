@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Online from './Online.jsx';
 import Offline from './Offline.jsx';
 
-
 class Status extends Component {
   constructor(props) {
     super(props);
@@ -12,26 +11,20 @@ class Status extends Component {
     };
   }
 
-  handelOnline = () => {
-    this.setState({
+  handleOnline = () => {
+    console.log(22)
+    this.setState = ({
       isOnline: true,
     });
   };
 
-
   render() {
-    // let button;
-    // if (this.state.isOnline) {
-    //   button = <Online />
-    // } else {
-    //   button = <Offline onOnline={this.handelOffline}/>;
-    // }
     return (
       <div>
-        {this.isOnline ? (
-          <Online isOnline={this.state.isOnline} />
+        {this.state.isOnline ? (
+          <Online />
         ) : (
-          <Offline isOnline={this.handelOnline} />
+          <Offline onOnline={this.handleOnline} />
         )}
       </div>
     );

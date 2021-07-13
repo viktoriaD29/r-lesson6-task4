@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
-const Online = (props) => {
-  return <span class="status__text">All good!</span>;
+const Online = () => {
+  return (
+    <div className="status">
+      <span className="status__text">All good!</span>;
+    </div>
+  );
 };
 
 export default Online;
