@@ -12,11 +12,16 @@ class Status extends Component {
   }
 
   handleOnline = () => {
-    console.log(22)
+    // console.log(22);
+    // this.setState = {
+    //   isOnline: true,
+    // };
     this.setState((state) => ({ ...state, isOnline: true }));
+    
   };
 
   render() {
+    console.log(this.state.isOnline)
     return (
       <div>
         {this.state.isOnline ? (
@@ -30,7 +35,3 @@ class Status extends Component {
 }
 
 export default Status;
-
-// {
-//   this.state.isOnline ? <Online /> : <Offline />;
-// }
